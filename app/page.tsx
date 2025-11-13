@@ -1,10 +1,15 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
 import { lusitana } from '@/app/ui/fonts';
-import styles from '@/app/ui/home.module.css';
-import { testConnection } from './lib/database';
+
+export const metadata: Metadata = {
+  title: 'Acme Inc. - Next.js Learn Course',
+  description: 'This is the example for the Next.js Learn Course, brought to you by Vercel.',
+  keywords: ['Next.js', 'Vercel', 'Learn', 'Course', 'Acme Inc.'],
+};
 
 export default function Page() {
   return (
